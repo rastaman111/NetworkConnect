@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gje-03-Mwu">
+                                <rect key="frame" x="82" y="385.5" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="52F-cJ-nHf"/>
+                                    <constraint firstAttribute="height" constant="35" id="BvL-Da-GNS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-lo-zT3">
+                                <rect key="frame" x="82" y="430.5" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="AlZ-gl-bls"/>
+                                    <constraint firstAttribute="width" constant="250" id="PQD-nQ-Hzx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATf-IQ-mdp">
+                                <rect key="frame" x="82" y="475.5" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Bka-K7-GVs"/>
+                                    <constraint firstAttribute="height" constant="35" id="JDV-lC-ic8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz0-iY-ku6">
+                                <rect key="frame" x="82" y="807" width="250" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="39I-GE-OWq"/>
+                                    <constraint firstAttribute="width" constant="250" id="Azu-ZH-sou"/>
+                                </constraints>
+                                <state key="normal" title="Start Monitoring">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toggleMonitoring:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7F-fr-yBu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vz0-iY-ku6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6B7-iG-9lR"/>
+                            <constraint firstItem="hf4-lo-zT3" firstAttribute="top" secondItem="gje-03-Mwu" secondAttribute="bottom" constant="10" id="EHJ-E1-Fgz"/>
+                            <constraint firstItem="ATf-IQ-mdp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GyX-gk-YWI"/>
+                            <constraint firstItem="gje-03-Mwu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QmX-eA-boj"/>
+                            <constraint firstItem="hf4-lo-zT3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lge-8K-dVG"/>
+                            <constraint firstItem="gje-03-Mwu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-50" id="v4F-Jl-d7O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vz0-iY-ku6" secondAttribute="bottom" constant="15" id="vNq-dM-xMQ"/>
+                            <constraint firstItem="ATf-IQ-mdp" firstAttribute="top" secondItem="hf4-lo-zT3" secondAttribute="bottom" constant="10" id="w9a-Tt-WrI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="monitorButton" destination="Vz0-iY-ku6" id="THT-AC-ooL"/>
+                        <outlet property="monitorLabel" destination="gje-03-Mwu" id="nD9-8H-YIi"/>
+                        <outlet property="monitorLabelExpensive" destination="ATf-IQ-mdp" id="UqV-hO-hvs"/>
+                        <outlet property="monitorLabelType" destination="hf4-lo-zT3" id="zYC-nC-tU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
